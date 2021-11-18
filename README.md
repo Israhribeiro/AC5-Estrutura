@@ -9,7 +9,11 @@
 *  Israel Tavares Ribeiro RA 1905029
 *  Weslley Schunemann RA 1904751
 
-
+Tarefa 17: exercícios dos slides de 81 a 84
+Tarefa 18: exercícios dos slides 84 a 85
+Tarefa 19: exercícios do slide 16
+Tarefa 20: exercícios do slide 29
+Tarefa 21: exercícios dos slides 39 e 40
 
 - [x] fila de prioridade
 - [] Tad Dicionario em andamento 
