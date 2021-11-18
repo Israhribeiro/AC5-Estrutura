@@ -11,6 +11,7 @@ import exceptions.InvalidPositionException;
 import TAD_ArvBin.LinkedBinaryTree;
 import position.NodePositionList;
 import position.PositionList;
+import TAD_ArvBin.BTPosition;
 
 //Implementação de um dicionário com uma árvore binária de pesquisa
 public class BinarySearchTree<K, V> extends LinkedBinaryTree<Entry<K, V>> implements Map<K, V> {
@@ -161,5 +162,52 @@ public class BinarySearchTree<K, V> extends LinkedBinaryTree<Entry<K, V>> implem
         if (isInternal(v)) s += ")";
         return s;
     }
+
+    protected Position<Entry<K, V>> restructure(Position<Entry<K, V>> x) {
+        BTPosition<Entry<K, V>> a, b, c, t0, t1, t2, t3;
+        Position<Entry<K, V>> y = parent(x); // assume que x tem um pai
+        Position<Entry<K, V>> z = parent(y); // assume que y tem um pai
+        BTPosition<Entry<K, V>> xx = (BTPosition<Entry<K, V>>) x;
+        BTPosition<Entry<K, V>> yy = (BTPosition<Entry<K, V>>) y;
+        BTPosition<Entry<K, V>> zz = (BTPosition<Entry<K, V>>) z;
+        boolean xLeft = (x == left(y));
+        boolean yLeft = (y == left(z));
+        if (xLeft && yLeft) { // forma (b) de mapeamento
+            a = xx; b = yy; c = zz;
+            t0 = a.getLeft(); t1 = a.getRight(); t2 = b.getRight(); t3 = c.getRight();
+        } else if (!xLeft && yLeft) { // forma (d) de mapeamento
+            a = yy; b = xx; c = zz; t0 = a.getLeft();
+            t1 = b.getLeft(); t2 = b.getRight(); t3 = c.getRight();
+        } else if (xLeft && !yLeft) { // forma (c) de mapeamento
+            a = zz; b = xx; c = yy;
+            t0 = a.getLeft(); t1 = b.getLeft(); t2 = b.getRight(); t3 = c.getRight();
+        } else { // // forma (a) de mapeamento
+            a = zz; b = yy; c = xx;
+            t0 = a.getLeft(); t1 = b.getLeft(); t2 = c.getLeft(); t3 = c.getRight();
+        }
+
+        if (isRoot(z)) {
+            root = b;
+            b.setParent(null);
+        } else {
+            BTPosition<Entry<K, V>> zParent = (BTPosition<Entry<K, V>>) parent(z);
+            if (z == left(zParent)) {  // z é filho esquerdo
+                b.setParent(zParent);
+                zParent.setLeft(b);
+            } else { // z é filho direito
+                b.setParent(zParent);
+                zParent.setRight(b);
+            }
+        }
+
+        b.setLeft(a); a.setParent(b); a.setLeft(t0); t0.setParent(a); a.setRight(t1); t1.setParent(a);
+        b.setRight(c); c.setParent(b); c.setLeft(t2); t2.setParent(c); c.setRight(t3); t3.setParent(c);
+
+        ((BSTEntry<K, V>) a.element()).pos = a;
+        ((BSTEntry<K, V>) b.element()).pos = b;
+        ((BSTEntry<K, V>) c.element()).pos = c;
+        return b;
+    }
+
 }
 
