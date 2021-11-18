@@ -16,5 +16,3 @@ Tarefa 20: exercícios do slide 29
 Tarefa 21: exercícios dos slides 39 e 40
 
 - [x] fila de prioridade
-- [] Tad Dicionario em andamento 
-- [] Tad_MapaOrdenado
