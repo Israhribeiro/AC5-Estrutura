@@ -11,4 +11,6 @@
 
 
 
--  [x] fila de prioridade
+- [x] fila de prioridade
+- [] Tad Dicionario em andamento 
+- [] Tad_MapaOrdenado
