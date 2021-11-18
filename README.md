@@ -11,4 +11,4 @@
 
 
 
-- [ x ] fila de prioridade
+-  [  x  ] fila de prioridade
