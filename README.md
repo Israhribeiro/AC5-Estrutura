@@ -15,7 +15,7 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
 2. Qual é a saída (desenho do heap) da seguinte sequência de métodos do TAD fila de prioridade: insert(5, A), insert(4, B), insert(7, I), insert(1, D), removeMin( ), insert(3, J), insert(6, L), removeMin( ), removeMin( ), insert(8, G), removeMin( ), insert(2, H), removeMin(), removeMin()?
 
-3. Um aeroporto quer simular o tráfego aéreo com eventos como decolagens e pousos. Os eventos têm um time-stamp com a hora em que o evento acontece. O simulador deve realizar eficientemente as duas operações fundamentais a seguir:
+- [x] 3. Um aeroporto quer simular o tráfego aéreo com eventos como decolagens e pousos. Os eventos têm um time-stamp com a hora em que o evento acontece. O simulador deve realizar eficientemente as duas operações fundamentais a seguir:
 
    •inserir um evento com um dado time-stamp (ou seja, inserir um evento futuro);
 
@@ -25,10 +25,10 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
    R: A melhor estrutura para se usar é fila de prioridade, pois poderia utilizar a chave como o timeStamp e com a função removeMin() é possível extrair o menor timeStamp e obter o evento.
 
-4. Onde pode estar armazenado o elemento com a maior chave em um heap?
+- [x] 4. Onde pode estar armazenado o elemento com a maior chave em um heap?
    R: No último nodo do heap
 
-5. Seja T uma árvore binária completa em que **v** armazena a entrada (**p**(**v**),0), onde **p**(**v**) é o número do nível de **v**. A árvore T é um heap? Justifique sua resposta.
+- [x] 5. Seja T uma árvore binária completa em que **v** armazena a entrada (**p**(**v**),0), onde **p**(**v**) é o número do nível de **v**. A árvore T é um heap? Justifique sua resposta.
    R: Não, pois o local onde p(v) é guardado geralmente fica a chave do heap e ,caso haja itens no mesmo nível,causaria um conflito de chaves.
 
 6. Explique por que não se considera o caso do filho direito de **r** ser interno e o filho esquerdo ser externo quando se descreve o processo do down-heap bubbling.
