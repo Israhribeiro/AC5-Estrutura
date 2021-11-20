@@ -53,11 +53,11 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
 Tarefa 18: exercícios dos slides 84 a 85
 
-1. Qual dos esquemas de tratamento de colisão de tabela hash consegue tolerar um fator de carga superior a 1 e qual não consegue?
+- [x] 1. Qual dos esquemas de tratamento de colisão de tabela hash consegue tolerar um fator de carga superior a 1 e qual não consegue?
 
      R: O hashing duplo consegue tolerar um  fator de  carga superior a 1  e o que não  eo fator de carga  eo endereçamento aberto.
      
-2. Qual seria um bom código hash para um número de identificação de veículo que é uma cadeia de caracteres representando números e letras no formato “9X9XX99X9XX999999,” onde um “9” representa um dígito e um “X” representa uma letra?
+- [x] 2. Qual seria um bom código hash para um número de identificação de veículo que é uma cadeia de caracteres representando números e letras no formato “9X9XX99X9XX999999,” onde um “9” representa um dígito e um “X” representa uma letra?
 
     R: O numero  mais indicado é 324564517.
 
@@ -67,19 +67,21 @@ Tarefa 18: exercícios dos slides 84 a 85
 6. Qual é o resultado do exercício 3 assumindo que as colisões são tratadas por hashing duplo usando uma função hash secundária h’(k)=7 (k mod 7)?
 7. Forneça uma descrição em pseudocódigo da inserção em uma tabela hash que usa teste quadrático para resolver colisões, assumindo que se usa o truque de substituir elementos deletados com um objeto indicando “item desativado”.
 8. Pesquise sobre o TAD Dicionário e descreva a principal diferença desse TAD com o TAD Mapa.
+      
+      R: Mapas possuem chaves únicas, entretanto, Dicionários podem possuem vários valores para uma mesma chave.
 
 Tarefa 19: exercícios do slide 16
 
 Tarefa 20: exercícios do slide 29
 
- 2. Inserindo-se as entradas (1,A), (2,B), (3,C), (4,D) e (5,E), nessa ordem, em uma árvore de pesquisa binária inicialmente vazia, qual será sua aparência?
+ - [x] 2. Inserindo-se as entradas (1,A), (2,B), (3,C), (4,D) e (5,E), nessa ordem, em uma árvore de pesquisa binária inicialmente vazia, qual será sua aparência?
   
   	![Arvore](20exer2.png)
  
  3. Define-se uma árvore binária de pesquisa em que as chaves iguais à chave do nodo podem estar ou à esquerda ou à direita da subárvore deste nodo. Suponha que se altere a definição na qual restringimos chaves iguais na subárvore à direita. Qual seria a subárvore de uma árvore binária de pesquisa que contenha somente chaves iguais, como visto neste caso?
  4. Insira, em uma árvore binária de pesquisa vazia, itens com as chaves 30, 40, 24, 58, 48, 26, 11, 13 (nesta ordem). Desenhe a árvore após cada inserção.
 	
- 5. Quantas árvores binárias de pesquisas diferentes podem armazenar as chaves {1,2,3}?
+ - [x] 5. Quantas árvores binárias de pesquisas diferentes podem armazenar as chaves {1,2,3}?
 
      R:6 Árvores binárias de pesquisas.
 	
@@ -87,7 +89,7 @@ Tarefa 20: exercícios do slide 29
 
 Tarefa 21: exercícios dos slides 39 e 40
 
-2. Inserindo-se as entradas (1,A), (2,B), (3,C), (4,D) e (5,E), nessa ordem, em uma árvore AVL inicialmente vazia, qual será sua aparência?
+- [x] 2. Inserindo-se as entradas (1,A), (2,B), (3,C), (4,D) e (5,E), nessa ordem, em uma árvore AVL inicialmente vazia, qual será sua aparência?
 	![Arvore](21exer2.png)
 
 3. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore AVL não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
