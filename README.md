@@ -54,7 +54,13 @@ Tarefa 17: exercícios dos slides de 81 a 84
 Tarefa 18: exercícios dos slides 84 a 85
 
 1. Qual dos esquemas de tratamento de colisão de tabela hash consegue tolerar um fator de carga superior a 1 e qual não consegue?
+
+     R: O hashing duplo consegue tolerar um  fator de  carga superior a 1  e o que não  eo fator de carga  eo endereçamento aberto.
+     
 2. Qual seria um bom código hash para um número de identificação de veículo que é uma cadeia de caracteres representando números e letras no formato “9X9XX99X9XX999999,” onde um “9” representa um dígito e um “X” representa uma letra?
+
+    R: O numero  mais indicado é 324564517.
+
 3. Desenhe a tabela hash com 11 elementos, que resulta a partir do uso da função de hash, h(i) = (3i + 5) mod 11, para colocar as chaves 12, 44, 13, 88, 23, 94, 11, 39, 20, 16 e 5, assumindo que as colisões serão tratadas por encadeamento.
 4. Qual será o resultado do exercício 3 se assumirmos que as colisões serão tratadas por teste linear?
 5. Mostre o resultado do exercício 3 assumindo que as colisões são tratadas por teste quadrático, até o ponto em que o método falha.
