@@ -93,5 +93,9 @@ Tarefa 21: exercícios dos slides 39 e 40
 	![Arvore](21exer2.png)
 
 3. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore AVL não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
+
 4. Desenhe a árvore AVL resultante da inserção de um elemento com chave 52 na árvore AVL abaixo.
+	![Arvore](tarefa21exer4.png)
 5. Desenhe a árvore AVL resultante da remoção de um elemento com chave 62 na árvore AVL após a inserção da chave 52 na árvore AVL abaixo.
+
+	![Arvore](tarefa21exer5.png)
