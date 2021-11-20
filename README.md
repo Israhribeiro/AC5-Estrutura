@@ -26,9 +26,13 @@ Tarefa 17: exercícios dos slides de 81 a 84
    R: A melhor estrutura para se usar é fila de prioridade, pois poderia utilizar a chave como o timeStamp e com a função removeMin() é possível extrair o menor timeStamp e obter o evento.
 
 - [x] 4. Onde pode estar armazenado o elemento com a maior chave em um heap?
+
+
    R: No último nodo do heap
 
 - [x] 5. Seja T uma árvore binária completa em que **v** armazena a entrada (**p**(**v**),0), onde **p**(**v**) é o número do nível de **v**. A árvore T é um heap? Justifique sua resposta.
+
+
    R: Não, pois o local onde p(v) é guardado geralmente fica a chave do heap e ,caso haja itens no mesmo nível,causaria um conflito de chaves.
 
 6. Explique por que não se considera o caso do filho direito de **r** ser interno e o filho esquerdo ser externo quando se descreve o processo do down-heap bubbling.
