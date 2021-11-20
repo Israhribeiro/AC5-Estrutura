@@ -23,6 +23,8 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
    Que estrutura de dados você usaria para suportar essas operações? Justifique sua resposta.
 
+   R: A melhor estrutura para se usar é fila de prioridade, pois poderia utilizar a chave como o timeStamp e com a função removeMin() é possível extrair o menor timeStamp e obter o evento.
+
 4. Onde pode estar armazenado o elemento com a maior chave em um heap?
    R: No último nodo do heap
 
