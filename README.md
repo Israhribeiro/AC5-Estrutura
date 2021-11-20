@@ -87,6 +87,17 @@ Tarefa 20: exercícios do slide 29
 	
  6. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore binária de pesquisa não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
 
+     5,3,8,7
+
+	![Arvore](tarefa20exer6part1.png)
+	
+	
+	
+     7,8,3,5
+     
+       ![Arvore](tarefa20exer6part2.png)
+	
+
 Tarefa 21: exercícios dos slides 39 e 40
 
 - [x] 2. Inserindo-se as entradas (1,A), (2,B), (3,C), (4,D) e (5,E), nessa ordem, em uma árvore AVL inicialmente vazia, qual será sua aparência?
