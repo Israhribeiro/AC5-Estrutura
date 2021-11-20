@@ -72,6 +72,8 @@ Tarefa 20: exercícios do slide 29
  4. Insira, em uma árvore binária de pesquisa vazia, itens com as chaves 30, 40, 24, 58, 48, 26, 11, 13 (nesta ordem). Desenhe a árvore após cada inserção.
 	
  5. Quantas árvores binárias de pesquisas diferentes podem armazenar as chaves {1,2,3}?
+
+     R:6 Árvores binárias de pesquisas.
 	
  6. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore binária de pesquisa não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
 
