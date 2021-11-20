@@ -99,6 +99,31 @@ class SortedListPriorityQueueTest {
         assertEquals("(Pessoa {nome=F, idade=25},null)", saida.toString());
         assertEquals("[(Pessoa {nome=F, idade=25},null), (Pessoa {nome=J, idade=20},null), (Pessoa {nome=M, idade=30},null)]", P.toString());
     }
+
+    @Test
+    void teste_pilha(){
+        SortedListPriorityQueue<Integer,String> Pilha = new SortedListPriorityQueue<Integer,String>();
+        int n = 0;
+        Pilha.insert(n--,"Z");
+        Pilha.insert(n--,"Y");
+        System.out.println(Pilha.toString());
+        Pilha.insert(n--,"X");
+        Pilha.insert(n--,"W");
+        Pilha.removeMin();
+        System.out.println(Pilha.toString());
+    }
+
+    @Test
+    void teste_fila(){
+        SortedListPriorityQueue<Integer,String> Fila = new SortedListPriorityQueue<Integer,String>();
+        int n = 0;
+        Fila.insert(++n,"A");
+        Fila.insert(++n,"B");
+        System.out.println(Fila.toString());
+        Fila.insert(++n,"C");
+        Fila.removeMin();
+        System.out.println(Fila.toString());
+    }
 }
 
 

@@ -11,12 +11,12 @@ import TAD_Mapa_Ordenado_ABB.BinarySearchTree;
 
 
 public class AVLTreeMap<K, V> extends BinarySearchTree<K, V> implements Map<K, V> {
-    public AVLTreeMap(Comparator<K> c) { super(c); }
+    //public AVLTreeMap(Comparator<K> c) { super(c); }
     public AVLTreeMap() { super(); }
 
     protected static class AVLNode<K, V> extends BTNode<Entry<K, V>> {
         protected int height;
-        AVLNode() { super(); }
+        //AVLNode() { super(); }
 
         @SuppressWarnings("unchecked")
         AVLNode(Entry<K, V> element, BTPosition<Entry<K, V>> parent, BTPosition<Entry<K, V>> left,

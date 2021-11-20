@@ -11,8 +11,8 @@ import TAD_ArvBinCompleta.ArrayListCompleteBinaryTree;
 import TAD_ArvBinCompleta.CompleteBinaryTree;
 
 public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
-    protected CompleteBinaryTree<Entry<K, V>> heap; // underlying heap
-    protected Comparator<K> comp; // comparator for the keys
+    protected CompleteBinaryTree<Entry<K, V>> heap;
+    protected Comparator<K> comp;
 
     protected static class MyEntry<K, V> implements Entry<K, V> {
         protected K key;
@@ -27,8 +27,8 @@ public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
     }
 
     public HeapPriorityQueue() {
-        heap = new ArrayListCompleteBinaryTree<Entry<K, V>>(); // Usa o ArrayListCompleteBinaryTree
-        comp = new DefaultComparator<K>(); // usa o comparador padrão
+        heap = new ArrayListCompleteBinaryTree<Entry<K, V>>();
+        comp = new DefaultComparator<K>();
     }
 
     public HeapPriorityQueue(Comparator<K> c) {
@@ -37,7 +37,7 @@ public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
     }
 
     public void setComparator(Comparator<K> c) throws IllegalStateException {
-        if (!isEmpty()) // Isto somente é permitido se a fila de prioridade estiver vazia
+        if (!isEmpty())
             throw new IllegalStateException("Priority queue is not empty");
         comp = c;
     }
@@ -52,7 +52,7 @@ public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
     }
 
     public Entry<K, V> insert(K k, V x) throws InvalidKeyException {
-        checkKey(k); // pode lançar um InvalidKeyException
+        checkKey(k);
         Entry<K, V> entry = new MyEntry<K, V>(k, x);
         upHeap(heap.add(entry));
         return entry;
@@ -89,7 +89,7 @@ public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
 
     protected void downHeap(Position<Entry<K, V>> r) {
         while (heap.isInternal(r)) {
-            Position<Entry<K, V>> s; // a posição do menor filho
+            Position<Entry<K, V>> s;
             if (!heap.hasRight(r)) s = heap.left(r);
             else if (comp.compare(heap.left(r).element().getKey(), heap.right(r).element().getKey()) <= 0)
                 s = heap.left(r);
@@ -105,6 +105,18 @@ public class HeapPriorityQueue<K, V> implements PriorityQueue<K, V> {
         Entry<K, V> temp = x.element();
         heap.replace(x, y.element());
         heap.replace(y, temp);
+    }
+
+    public int[] sortHeap(HeapPriorityQueue<Integer,Integer> queue,int[] array){
+        int n = array.length;
+        int[] newArray = new int[n];
+        for (int item:array) {
+            queue.insert(item,item);
+        }
+        for (int i = 0; i < n; i++) {
+            newArray[i] = (int) removeMin().getValue();
+        }
+        return newArray;
     }
 
     public String toString() {

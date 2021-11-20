@@ -32,5 +32,17 @@ class HeapPriorityQueueTest {
                 "[null, [(4,C),1], [(5,A),2], [(6,Z),3], [(15,K),4], [(9,F),5], [(7,Q),6], [(20,B),7],"
                         + " [(16,X),8], [(25,J),9], [(14,E),10], [(12,H),11], [(11,S),12], [(8,W),13]]", P.toString());
     }
+
+    @Test
+    void test2(){
+        HeapPriorityQueue<Integer, Integer> P = new HeapPriorityQueue<Integer, Integer>();
+        int[] array = P.sortHeap(P,new int[]{9, 1, 3, 6, 2, 7, 8});
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if(i != array.length - 1){
+                System.out.print(",");
+            }
+        }
+    }
 }
 

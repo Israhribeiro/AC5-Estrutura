@@ -180,21 +180,6 @@ public class LinkedTree<E> implements Tree<E> {
             return 1 + h;
         }
     }
-
-    public int diskSpace(LinkedTree<DiscNode> T, TreePosition<DiscNode> v) {
-        int s = v.element().getKbytes();
-        for (Position<DiscNode> w : v.getChildren()) {
-
-            s += diskSpace(T, (TreePosition<DiscNode>)w);
-        }
-        if (T.isInternal(v)) {
-
-            System.out.println(v.getElement().getName() + ": " + s);
-        }
-        return s;
-    }
-
-
 }
 
 

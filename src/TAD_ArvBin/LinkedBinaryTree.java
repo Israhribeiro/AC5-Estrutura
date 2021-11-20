@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import TAD_ArvGen.LinkedTree;
-import TADPilhaArray.NodeStack;
+import LSE_TADPilha.NodeStack;
 import exceptions.BoundaryViolationException;
 import exceptions.EmptyTreeException;
 import exceptions.InvalidPositionException;

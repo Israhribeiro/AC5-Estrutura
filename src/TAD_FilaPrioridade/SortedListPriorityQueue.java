@@ -58,9 +58,9 @@ public class SortedListPriorityQueue<K, V> implements PriorityQueue<K, V> {
     }
 
     public Entry<K, V> insert(K k, V v) throws InvalidKeyException {
-        checkKey(k); // auxiliary key-checking method (could throw exception)
+        checkKey(k);
         Entry<K, V> entry = new MyEntry<K, V>(k, v);
-        insertEntry(entry); // auxiliary insertion method
+        insertEntry(entry);
         return entry;
     }
 
