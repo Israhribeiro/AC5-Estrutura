@@ -62,11 +62,13 @@ Tarefa 18: exercícios dos slides 84 a 85
     R: O numero  mais indicado é 324564517.
 
 3. Desenhe a tabela hash com 11 elementos, que resulta a partir do uso da função de hash, h(i) = (3i + 5) mod 11, para colocar as chaves 12, 44, 13, 88, 23, 94, 11, 39, 20, 16 e 5, assumindo que as colisões serão tratadas por encadeamento.
-4. Qual será o resultado do exercício 3 se assumirmos que as colisões serão tratadas por teste linear?
-5. Mostre o resultado do exercício 3 assumindo que as colisões são tratadas por teste quadrático, até o ponto em que o método falha.
-6. Qual é o resultado do exercício 3 assumindo que as colisões são tratadas por hashing duplo usando uma função hash secundária h’(k)=7 (k mod 7)?
-7. Forneça uma descrição em pseudocódigo da inserção em uma tabela hash que usa teste quadrático para resolver colisões, assumindo que se usa o truque de substituir elementos deletados com um objeto indicando “item desativado”.
-8. Pesquise sobre o TAD Dicionário e descreva a principal diferença desse TAD com o TAD Mapa.
+    R: 
+    ![1](https://user-images.githubusercontent.com/59938696/142788964-3d2b9789-7761-474e-85e5-c49d2d7b9a4c.png)
+5. Qual será o resultado do exercício 3 se assumirmos que as colisões serão tratadas por teste linear?
+6. Mostre o resultado do exercício 3 assumindo que as colisões são tratadas por teste quadrático, até o ponto em que o método falha.
+7. Qual é o resultado do exercício 3 assumindo que as colisões são tratadas por hashing duplo usando uma função hash secundária h’(k)=7 (k mod 7)?
+8. Forneça uma descrição em pseudocódigo da inserção em uma tabela hash que usa teste quadrático para resolver colisões, assumindo que se usa o truque de substituir elementos deletados com um objeto indicando “item desativado”.
+9. Pesquise sobre o TAD Dicionário e descreva a principal diferença desse TAD com o TAD Mapa.
       
       R: Mapas possuem chaves únicas, entretanto, Dicionários podem possuem vários valores para uma mesma chave.
 
