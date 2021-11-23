@@ -13,8 +13,8 @@
 
 Tarefa 17: exercícios dos slides de 81 a 84
 
-- [x] 2. Qual é a saída (desenho do heap) da seguinte sequência de métodos do TAD fila de prioridade: insert(5, A), insert(4, B), insert(7, I), insert(1, D), removeMin( ), insert(3, J), insert(6, L), removeMin( ), removeMin( ), insert(8, G), removeMin( ), insert(2, H), removeMin(),removeMin()?
-R:
+- [x] 2. Qual é a saída (desenho do heap) da seguinte sequência de métodos do TAD fila de prioridade: insert(5, A), insert(4, B), insert(7, I), insert(1, D), removeMin( ), insert(3, J), insert(6, L), removeMin( ), removeMin( ), insert(8, G), removeMin( ), insert(2, H),removeMin(),removeMin()?
+
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/59938696/142961689-e236a85f-099c-4532-90ed-22a9000c6624.png)
 - [x] 3. Um aeroporto quer simular o tráfego aéreo com eventos como decolagens e pousos. Os eventos têm um time-stamp com a hora em que o evento acontece. O simulador deve realizar eficientemente as duas operações fundamentais a seguir:
 
