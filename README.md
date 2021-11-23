@@ -40,7 +40,15 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
 7. Existe um heap **T** armazenando sete elementos diferentes de forma que um caminhamento prefixado de **T** apresente os elementos de **T** em ordem crescente ou decrescente? E se for um caminhamento interfixado? E pós -fixado? Se sim, apresente um exemplo; caso contrário, justifique.
 
-8. Considere **H** um heap que armazena 15 elementos usando uma representação de arranjo de uma árvore binária completa. Qual é a sequência de índices da lista de arranjo que são visitados no caminhamento prefixado de H? E qual é a sequência em um caminhamento interfixado? E em um caminhamento pós-fixado?
+- [x] 8. Considere **H** um heap que armazena 15 elementos usando uma representação de arranjo de uma árvore binária completa. Qual é a sequência de índices da lista de arranjo que são visitados no caminhamento prefixado de H? E qual é a sequência em um caminhamento interfixado? E em um caminhamento pós-fixado?
+
+	R: 
+	
+	 prefixado - 1,2,4,8,9,5,10,11,3,6,12,13,7,14,15
+
+	 interfixado - 8,4,9,2,10,5,11,1,12,6,13,3,14,7,15
+
+	 posfixado - 8,9,4,10,11,5,2,12,13,6,14,15,7,3,1
 
 - [x] 9. Bill afirma que um caminhamento prefixado em um heap listará as chaves em ordem não-decrescente. Apresente um exemplo de um heap que prove que ele está errado.
 
