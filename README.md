@@ -29,7 +29,7 @@ R:
 - [x] 4. Onde pode estar armazenado o elemento com a maior chave em um heap?
 
 
-   R: No último nodo do heap
+   R: No último nível do heap ou no primeiro nodo
 
 - [x] 5. Seja T uma árvore binária completa em que **v** armazena a entrada (**p**(**v**),0), onde **p**(**v**) é o número do nível de **v**. A árvore T é um heap? Justifique sua resposta.
 
