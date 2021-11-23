@@ -42,9 +42,13 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
 8. Considere **H** um heap que armazena 15 elementos usando uma representação de arranjo de uma árvore binária completa. Qual é a sequência de índices da lista de arranjo que são visitados no caminhamento prefixado de H? E qual é a sequência em um caminhamento interfixado? E em um caminhamento pós-fixado?
 
-9. Bill afirma que um caminhamento prefixado em um heap listará as chaves em ordem não-decrescente. Apresente um exemplo de um heap que prove que ele está errado.
+- [x] 9. Bill afirma que um caminhamento prefixado em um heap listará as chaves em ordem não-decrescente. Apresente um exemplo de um heap que prove que ele está errado.
 
-10. Hillary afirma que um caminhamento pós-fixado em um heap listará as chaves em ordem não-crescente. Apresente um exemplo de um heap que prove que ela está errada.
+	 ![Arvore](tarefa17exer9.jpg)
+
+- [x] 10. Hillary afirma que um caminhamento pós-fixado em um heap listará as chaves em ordem não-crescente. Apresente um exemplo de um heap que prove que ela está errada.
+
+	 ![Arvore](tarefa17exer10.jpg)
 
 11. Apresente todos os passos do algoritmo para remover a chave 16 do heap abaixo:
 
