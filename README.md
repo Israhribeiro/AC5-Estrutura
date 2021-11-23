@@ -13,7 +13,7 @@
 
 Tarefa 17: exercícios dos slides de 81 a 84
 
-2. Qual é a saída (desenho do heap) da seguinte sequência de métodos do TAD fila de prioridade: insert(5, A), insert(4, B), insert(7, I), insert(1, D), removeMin( ), insert(3, J), insert(6, L), removeMin( ), removeMin( ), insert(8, G), removeMin( ), insert(2, H), removeMin(), removeMin()?
+- [x] 2. Qual é a saída (desenho do heap) da seguinte sequência de métodos do TAD fila de prioridade: insert(5, A), insert(4, B), insert(7, I), insert(1, D), removeMin( ), insert(3, J), insert(6, L), removeMin( ), removeMin( ), insert(8, G), removeMin( ), insert(2, H), removeMin(), removeMin()?
 R:
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/59938696/142961689-e236a85f-099c-4532-90ed-22a9000c6624.png)
 - [x] 3. Um aeroporto quer simular o tráfego aéreo com eventos como decolagens e pousos. Os eventos têm um time-stamp com a hora em que o evento acontece. O simulador deve realizar eficientemente as duas operações fundamentais a seguir:
@@ -29,12 +29,12 @@ R:
 - [x] 4. Onde pode estar armazenado o elemento com a maior chave em um heap?
 
 
-   R: No último nível do heap ou no primeiro nodo
+     R: No último nível do heap ou no primeiro nodo
 
 - [x] 5. Seja T uma árvore binária completa em que **v** armazena a entrada (**p**(**v**),0), onde **p**(**v**) é o número do nível de **v**. A árvore T é um heap? Justifique sua resposta.
 
 
-   R: Não, pois o local onde p(v) é guardado geralmente fica a chave do heap e ,caso haja itens no mesmo nível,causaria um conflito de chaves.
+     R: Não, pois o local onde p(v) é guardado geralmente fica a chave do heap e ,caso haja itens no mesmo nível,causaria um conflito de chaves.
 
 6. Explique por que não se considera o caso do filho direito de **r** ser interno e o filho esquerdo ser externo quando se descreve o processo do down-heap bubbling.
 
@@ -60,20 +60,20 @@ Tarefa 18: exercícios dos slides 84 a 85
      
 - [x] 2. Qual seria um bom código hash para um número de identificação de veículo que é uma cadeia de caracteres representando números e letras no formato “9X9XX99X9XX999999,” onde um “9” representa um dígito e um “X” representa uma letra?
 
-    R: O numero  mais indicado é 324564517.
+     R: O numero  mais indicado é 324564517.
 
-3. Desenhe a tabela hash com 11 elementos, que resulta a partir do uso da função de hash, h(i) = (3i + 5) mod 11, para colocar as chaves 12, 44, 13, 88, 23, 94, 11, 39, 20, 16 e 5, assumindo que as colisões serão tratadas por encadeamento.
+- [x] 3. Desenhe a tabela hash com 11 elementos, que resulta a partir do uso da função de hash, h(i) = (3i + 5) mod 11, para colocar as chaves 12, 44, 13, 88, 23, 94, 11, 39, 20, 16 e 5, assumindo que as colisões serão tratadas por encadeamento.
     R: 
     ![1](https://user-images.githubusercontent.com/59938696/142788964-3d2b9789-7761-474e-85e5-c49d2d7b9a4c.png)
-5. Qual será o resultado do exercício 3 se assumirmos que as colisões serão tratadas por teste linear?
+- [x] 5. Qual será o resultado do exercício 3 se assumirmos que as colisões serão tratadas por teste linear?
     R:
  ![2](https://user-images.githubusercontent.com/59938696/142791543-2c6876bd-2f1a-4621-a2af-cdc1aee3398e.png)
 7. Mostre o resultado do exercício 3 assumindo que as colisões são tratadas por teste quadrático, até o ponto em que o método falha.
 8. Qual é o resultado do exercício 3 assumindo que as colisões são tratadas por hashing duplo usando uma função hash secundária h’(k)=7 (k mod 7)?
 9. Forneça uma descrição em pseudocódigo da inserção em uma tabela hash que usa teste quadrático para resolver colisões, assumindo que se usa o truque de substituir elementos deletados com um objeto indicando “item desativado”.
-10. Pesquise sobre o TAD Dicionário e descreva a principal diferença desse TAD com o TAD Mapa.
+- [x] 10. Pesquise sobre o TAD Dicionário e descreva a principal diferença desse TAD com o TAD Mapa.
       
-      R: Mapas possuem chaves únicas, entretanto, Dicionários podem possuem vários valores para uma mesma chave.
+     R: Mapas possuem chaves únicas, entretanto, Dicionários podem possuem vários valores para uma mesma chave.
 
 Tarefa 19: exercícios do slide 16
 
@@ -90,7 +90,7 @@ Tarefa 20: exercícios do slide 29
 
      R:6 Árvores binárias de pesquisas.
 	
- 6. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore binária de pesquisa não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
+- [x] 6. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore binária de pesquisa não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
 
      5,3,8,7
 
@@ -100,7 +100,7 @@ Tarefa 20: exercícios do slide 29
 	
      7,8,3,5
      
-       ![Arvore](tarefa20exer6part2.png)
+     ![Arvore](tarefa20exer6part2.png)
 	
 
 Tarefa 21: exercícios dos slides 39 e 40
@@ -110,8 +110,8 @@ Tarefa 21: exercícios dos slides 39 e 40
 
 3. O professor Amongus afirma que a ordem na qual um conjunto fixo de itens é inserido em uma árvore AVL não interessa — sempre resulta na mesma árvore. Apresente um pequeno exemplo que prove que ele está errado.
 
-4. Desenhe a árvore AVL resultante da inserção de um elemento com chave 52 na árvore AVL abaixo.
+- [x] 4. Desenhe a árvore AVL resultante da inserção de um elemento com chave 52 na árvore AVL abaixo.
 	![Arvore](tarefa21exer4.png)
-5. Desenhe a árvore AVL resultante da remoção de um elemento com chave 62 na árvore AVL após a inserção da chave 52 na árvore AVL abaixo.
+- [x] 5. Desenhe a árvore AVL resultante da remoção de um elemento com chave 62 na árvore AVL após a inserção da chave 52 na árvore AVL abaixo.
 
 	![Arvore](tarefa21exer5.png)
