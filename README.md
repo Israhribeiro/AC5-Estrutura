@@ -97,6 +97,9 @@ Tarefa 20: exercícios do slide 29
  
  3. Define-se uma árvore binária de pesquisa em que as chaves iguais à chave do nodo podem estar ou à esquerda ou à direita da subárvore deste nodo. Suponha que se altere a definição na qual restringimos chaves iguais na subárvore à direita. Qual seria a subárvore de uma árvore binária de pesquisa que contenha somente chaves iguais, como visto neste caso?
  4. Insira, em uma árvore binária de pesquisa vazia, itens com as chaves 30, 40, 24, 58, 48, 26, 11, 13 (nesta ordem). Desenhe a árvore após cada inserção.
+
+	
+  	![Arvore](vinteponto4.jpg)
 	
  - [x] 5. Quantas árvores binárias de pesquisas diferentes podem armazenar as chaves {1,2,3}?
 
