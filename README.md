@@ -38,8 +38,21 @@ Tarefa 17: exercícios dos slides de 81 a 84
 
 6. Explique por que não se considera o caso do filho direito de **r** ser interno e o filho esquerdo ser externo quando se descreve o processo do down-heap bubbling.
 
-7. Existe um heap **T** armazenando sete elementos diferentes de forma que um caminhamento prefixado de **T** apresente os elementos de **T** em ordem crescente ou decrescente? E se for um caminhamento interfixado? E pós -fixado? Se sim, apresente um exemplo; caso contrário, justifique.
-
+- [x] 7. Existe um heap **T** armazenando sete elementos diferentes de forma que um caminhamento prefixado de **T** apresente os elementos de **T** em ordem crescente ou decrescente? E se for um caminhamento interfixado? E pós -fixado? Se sim, apresente um exemplo; caso contrário, justifique.
+	
+	 pós fixado
+	 
+	 ![Arvore](17pos7.jpg)
+	 
+	infixado
+	
+	![Arvore](17in7.jpg)
+	
+	prefixado
+	
+	![Arvore](17pre7.jpg)
+	
+	
 - [x] 8. Considere **H** um heap que armazena 15 elementos usando uma representação de arranjo de uma árvore binária completa. Qual é a sequência de índices da lista de arranjo que são visitados no caminhamento prefixado de H? E qual é a sequência em um caminhamento interfixado? E em um caminhamento pós-fixado?
 
 	R: 
@@ -51,7 +64,7 @@ Tarefa 17: exercícios dos slides de 81 a 84
 	 posfixado - 8,9,4,10,11,5,2,12,13,6,14,15,7,3,1
 
 - [x] 9. Bill afirma que um caminhamento prefixado em um heap listará as chaves em ordem não-decrescente. Apresente um exemplo de um heap que prove que ele está errado.
-
+	
 	 ![Arvore](tarefa17exer9.jpg)
 
 - [x] 10. Hillary afirma que um caminhamento pós-fixado em um heap listará as chaves em ordem não-crescente. Apresente um exemplo de um heap que prove que ela está errada.
@@ -96,7 +109,7 @@ Tarefa 20: exercícios do slide 29
   	![Arvore](20exer2.png)
  
  3. Define-se uma árvore binária de pesquisa em que as chaves iguais à chave do nodo podem estar ou à esquerda ou à direita da subárvore deste nodo. Suponha que se altere a definição na qual restringimos chaves iguais na subárvore à direita. Qual seria a subárvore de uma árvore binária de pesquisa que contenha somente chaves iguais, como visto neste caso?
- 4. Insira, em uma árvore binária de pesquisa vazia, itens com as chaves 30, 40, 24, 58, 48, 26, 11, 13 (nesta ordem). Desenhe a árvore após cada inserção.
+ - [x] 4. Insira, em uma árvore binária de pesquisa vazia, itens com as chaves 30, 40, 24, 58, 48, 26, 11, 13 (nesta ordem). Desenhe a árvore após cada inserção.
 
 	
   	![Arvore](vinteponto4.jpg)
